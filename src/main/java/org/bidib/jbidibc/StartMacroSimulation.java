@@ -4,6 +4,7 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Map;
 
 import org.bidib.jbidibc.core.node.AccessoryNode;
 import org.bidib.jbidibc.messages.Node;
@@ -13,6 +14,8 @@ import org.bidib.jbidibc.messages.helpers.Context;
 import org.bidib.jbidibc.messages.helpers.DefaultContext;
 import org.bidib.jbidibc.messages.utils.ByteUtils;
 import org.bidib.jbidibc.simulation.SimulationInterface;
+import org.bidib.jbidibc.simulation.annotation.BidibVidPid;
+import org.bidib.wizard.core.utils.BidibNodeSimulatorScanner;
 
 import picocli.CommandLine.Command;
 
@@ -79,6 +82,12 @@ public class StartMacroSimulation extends BidibNodeCommand {
 
         Path path = Paths.get(resource.toURI());
         ctx.register(SimulationInterface.CONTEXT_KEY_SIMULATION_FILENAME, path.toString());
+
+        // add mapping of vid/pid to simulator classname
+        final Map<BidibVidPid, String> simulatorClassMapping = BidibNodeSimulatorScanner.findSimulatorClasses();
+
+        ctx.register(SimulationInterface.CONTEXT_KEY_SIMULATOR_CLASS_MAPPING, simulatorClassMapping);
+
         return ctx;
     }
 }

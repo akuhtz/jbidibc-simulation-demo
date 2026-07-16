@@ -2,7 +2,7 @@
 
 A Maven project demonstrating [jbidibc](https://github.com/bidib/jbidibc) simulation using the `StartMacro` command.
 
-> **Note:** This project requires `2.0-SNAPSHOT` versions of `jbidibc-tools` and `bidibwizard-simulation` (from Sonatype snapshots repository). The fixes needed are not yet released, so snapshot versions are mandatory.
+> **Note:** This project requires `2.0-SNAPSHOT` versions of `jbidibc-tools`, `bidibwizard-core`, and `bidibwizard-simulation` (from Sonatype snapshots repository). The fixes needed are not yet released, so snapshot versions are mandatory.
 
 ## Prerequisites
 
@@ -44,3 +44,7 @@ mvn test
 
 The simulation setup is defined in `src/main/resources/simulation-demo/simulation.xml`.
 It uses `IF2Simulator` as the master node with a `LedIo24Simulator` subnode.
+
+## Simulator Auto-Discovery
+
+The application uses `BidibNodeSimulatorScanner` to auto-discover simulator classes by vid/pid mapping at startup, so manual registration of simulator implementations is not required.

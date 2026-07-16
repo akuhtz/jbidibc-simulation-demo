@@ -44,6 +44,25 @@
         </dependency>
         <dependency>
             <groupId>org.bidib.jbidib</groupId>
+            <artifactId>bidibwizard-core</artifactId>
+            <version>${bidibwizard.version}</version>
+            <exclusions>
+            	<exclusion>
+            		<groupId>org.bidib.jbidib</groupId>
+            		<artifactId>bidibwizard-firmware-repo</artifactId>
+            	</exclusion>
+            	<exclusion>
+            		<groupId>org.bidib.jbidib</groupId>
+            		<artifactId>bidibwizard-localhost</artifactId>
+            	</exclusion>
+            	<exclusion>
+            		<groupId>org.bidib.jbidib</groupId>
+            		<artifactId>bidibwizard-migration</artifactId>
+            	</exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.bidib.jbidib</groupId>
             <artifactId>bidibwizard-simulation</artifactId>
             <version>${bidibwizard.version}</version>
         </dependency>
