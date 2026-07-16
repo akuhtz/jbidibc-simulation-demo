@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simulation xmlns="http://www.bidib.org/jbidibc/simulation/nodes"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://www.bidib.org/jbidibc/simulation/nodes /xsd/simulation.xsd">
+    <master uniqueId="90000d84002100" className="org.bidib.wizard.simulation.IF2Simulator" address="0" autoAddFeature="true" productName="IF2 Simulator" userName="IF2" softwareVersion="2.10.4">
+        <subNodes>
+            <node uniqueId="45000D7F000E94" protocolVersion="0.7" className="org.bidib.wizard.simulation.LedIo24Simulator" address="5" productName="LED_IO_24" userName="LED_IO_24-1" softwareVersion="2.02.19">
+                <LPORT count="24">
+                    <port intensityOff="0" intensityOn="200" dimSlopeUp="10" dimSlopeDown="10" portId="0"/>
+                    <port intensityOff="0" intensityOn="200" dimSlopeUp="10" dimSlopeDown="10" portId="1"/>
+                    <port intensityOff="0" intensityOn="255" dimSlopeUp="6" dimSlopeDown="2" portId="2"/>
+                    <port intensityOff="0" intensityOn="255" dimSlopeUp="6" dimSlopeDown="2" portId="3"/>
+                    <port intensityOff="0" intensityOn="255" dimSlopeUp="6" dimSlopeDown="2" portId="4"/>
+                    <port intensityOff="0" intensityOn="255" dimSlopeUp="6" dimSlopeDown="2" portId="5"/>
+                    <port intensityOff="0" intensityOn="255" dimSlopeUp="6" dimSlopeDown="2" portId="6"/>
+                    <port intensityOff="0" intensityOn="255" dimSlopeUp="6" dimSlopeDown="2" portId="7"/>
+                    <port intensityOff="0" intensityOn="255" dimSlopeUp="6" dimSlopeDown="2" portId="8"/>
+                    <port intensityOff="0" intensityOn="255" dimSlopeUp="6" dimSlopeDown="2" portId="9"/>
+                    <port intensityOff="0" intensityOn="255" dimSlopeUp="6" dimSlopeDown="2" portId="10"/>
+                    <port intensityOff="0" intensityOn="255" dimSlopeUp="6" dimSlopeDown="2" portId="11"/>
+                    <port intensityOff="0" intensityOn="255" dimSlopeUp="6" dimSlopeDown="2" portId="12"/>
+                    <port intensityOff="0" intensityOn="255" dimSlopeUp="6" dimSlopeDown="2" portId="13"/>
+                    <port intensityOff="0" intensityOn="255" dimSlopeUp="6" dimSlopeDown="2" portId="14"/>
+                    <port intensityOff="0" intensityOn="255" dimSlopeUp="6" dimSlopeDown="2" portId="15"/>
+                    <port intensityOff="0" intensityOn="255" dimSlopeUp="6" dimSlopeDown="2" portId="16"/>
+                    <port intensityOff="0" intensityOn="255" dimSlopeUp="6" dimSlopeDown="2" portId="17"/>
+                    <port intensityOff="0" intensityOn="255" dimSlopeUp="6" dimSlopeDown="2" portId="18"/>
+                    <port intensityOff="0" intensityOn="255" dimSlopeUp="6" dimSlopeDown="2" portId="19"/>
+                    <port intensityOff="0" intensityOn="255" dimSlopeUp="6" dimSlopeDown="2" portId="20"/>
+                    <port intensityOff="0" intensityOn="255" dimSlopeUp="6" dimSlopeDown="2" portId="21"/>
+                    <port intensityOff="0" intensityOn="255" dimSlopeUp="6" dimSlopeDown="2" portId="22"/>
+                    <port intensityOff="0" intensityOn="255" dimSlopeUp="6" dimSlopeDown="2" portId="23"/>
+                </LPORT>
+                <INPUT count="26" offset="0">
+                    <port portId="0"/>
+                    <port portId="1"/>
+                    <port portId="2"/>
+                    <port portId="3"/>
+                    <port portId="4"/>
+                    <port portId="5"/>
+                    <port portId="6"/>
+                    <port portId="7"/>
+                    <port portId="8"/>
+                    <port portId="9"/>
+                    <port portId="10"/>
+                    <port portId="11"/>
+                    <port portId="12"/>
+                    <port portId="13"/>
+                    <port portId="14"/>
+                    <port portId="15"/>
+                    <port portId="16"/>
+                    <port portId="17"/>
+                    <port portId="18"/>
+                    <port portId="19"/>
+                    <port portId="20"/>
+                    <port portId="21"/>
+                    <port portId="22"/>
+                    <port portId="23"/>
+                    <port portId="24"/>
+                    <port portId="25"/>
+                </INPUT>
+                <Features>
+                    <feature type="FEATURE_BM_SIZE" value="24"/>
+                    <feature type="FEATURE_BM_ON" value="1"/>
+                    <feature type="FEATURE_BM_SECACK_AVAILABLE" value="1"/>
+                    <feature type="FEATURE_BM_SECACK_ON" value="0"/>
+                    <feature type="FEATURE_BM_TIMESTAMP_ON" value="1"/>
+                    <feature type="FEATURE_ACCESSORY_COUNT" value="12"/>
+                    <feature type="FEATURE_ACCESSORY_MACROMAPPED" value="7"/>
+                    <feature type="FEATURE_CTRL_INPUT_COUNT" value="26"/>
+                    <feature type="FEATURE_CTRL_INPUT_NOTIFY" value="1"/>
+                    <feature type="FEATURE_CTRL_LIGHT_COUNT" value="24"/>
+                    <feature type="FEATURE_CTRL_MAC_LEVEL" value="2"/>
+                    <feature type="FEATURE_CTRL_MAC_SAVE" value="24"/>
+                    <feature type="FEATURE_CTRL_MAC_COUNT" value="24"/>
+                    <feature type="FEATURE_CTRL_MAC_SIZE" value="20"/>
+                    <feature type="FEATURE_CTRL_MAC_START_MAN" value="1"/>
+                    <feature type="FEATURE_CTRL_PORT_QUERY_AVAILABLE" value="1"/>
+                    <feature type="FEATURE_CTRL_PORT_FLAT_MODEL" value="26"/>
+                    <feature type="FEATURE_STRING_SIZE" value="16"/>
+                    <feature type="FEATURE_FW_UPDATE_MODE" value="1"/>
+                </Features>
+                
+                <CVs>
+                    <cv number="1" value="1" description="EE Version"/>
+                    <cv number="2" value="13" description="vendor_id"/>
+                    <cv number="3" value="15" description="hw_serial_low"/>
+                    <cv number="4" value="0" description="hw_serial_high"/>
+                    <cv number="5" value="2" description="main version"/>
+                    <cv number="6" value="2" description="sub version"/>
+                    <cv number="7" value="18" description="compile run"/>
+                    <cv number="168" value="0" description="Richtung für Portgruppe 1"/>
+                    <cv number="169" value="0" description="Richtung für Portgruppe 2"/>
+                    <cv number="170" value="0" description="Richtung für Portgruppe 3"/>
+                    <cv number="171" value="0" description="Input als Belegtmelder für Portgruppe 1"/>
+                    <cv number="172" value="0" description="Input als Belegtmelder für Portgruppe 2"/>
+                    <cv number="173" value="0" description="Input als Belegtmelder für Portgruppe 3"/>
+                    <cv number="174" value="255" description="Aktiv auf GND für Portgruppe 1"/>
+                    <cv number="175" value="255" description="Aktiv auf GND für Portgruppe 2"/>
+                    <cv number="176" value="255" description="Aktiv auf GND für Portgruppe 3"/>
+                    <cv number="177" value="255" description="Pullup für Portgruppe 1"/>
+                    <cv number="178" value="255" description="Pullup für Portgruppe 2"/>
+                    <cv number="179" value="255" description="Pullup für Portgruppe 3"/>
+                    <cv number="180" value="0" description="Lichtausgang auf UB+ oder GND für Portgruppe 1"/>
+                    <cv number="181" value="0" description="Lichtausgang auf UB+ oder GND für Portgruppe 2"/>
+                    <cv number="182" value="0" description="Lichtausgang auf UB+ oder GND für Portgruppe 3"/>
+                    <cv number="183" value="100" description="Entprellzeit in Einheiten von 100us; Wertebereich 0..255, Default: 100. Angeben ist, wie lange das entprellen der Tasten und TLE dauert (100 = 10 ms)."/>
+                    <cv number="184" value="0" description="Memory hold time, in Einheiten von 20ms; Wertebereich 0..255, Default: 0. Angeben ist, wie lange eine Belegung nach Freigabe aufrecht erhalten bleibt."/>
+                </CVs>
+                
+            </node>
+        </subNodes>
+    </master>
+</simulation>
