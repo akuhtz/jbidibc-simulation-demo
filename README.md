@@ -34,11 +34,33 @@ java -jar target/jbidibc-simulation-demo-1.0-SNAPSHOT.jar \
 | `-macro` | yes | Macro number to execute |
 | `-simFile` | no | Simulation XML path (default: `/simulation.xml`) |
 
+### SetAccessoryAspectSimulation
+
+Additional parameters for the `SetAccessoryAspectSimulation` command:
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `-accessory` | yes | Accessory number to control |
+| `-aspect` | yes | Aspect number to set |
+
+Run:
+
+```sh
+java -jar target/jbidibc-simulation-demo-1.0-SNAPSHOT.jar \
+    -port=sim \
+    -nodeId=0x45000D7F000E94 \
+    -accessory=0 \
+    -aspect=1 \
+    -simFile=/simulation-demo/simulation.xml
+```
+
 ## Test
 
 ```sh
 mvn test
 ```
+
+Tests use [AssertJ](https://assertj.github.io/doc/) for assertions and cover both `StartMacroSimulation` and `SetAccessoryAspectSimulation` (including an error-simulation case on accessory 1 / aspect 1).
 
 ## Simulation Config
 

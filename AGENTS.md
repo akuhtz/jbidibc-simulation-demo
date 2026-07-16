@@ -37,7 +37,7 @@ These rules apply to ALL AI agents working on this codebase.
 
 ### Attribution
 
-- All AI-generated content (GitHub PR descriptions, review comments, JIRA comments) MUST clearly
+- All AI-generated content (GitHub PR descriptions, review comments, JIRA comments, commits) MUST clearly
   identify itself as AI-generated and mention the human operator.
   Example: "_Claude Code on behalf of [Human Name]_"
 - **Never guess or hallucinate the operator's name.** Always determine it programmatically:
@@ -46,3 +46,8 @@ These rules apply to ALL AI agents working on this codebase.
 - AI coding agents MUST be configured to add co-authorship trailers to commits
   (e.g., `Co-authored-by`). For Claude Code, enable this via the
   [attribution settings](https://code.claude.com/docs/en/settings#attribution-settings).
+
+### Testing
+
+- Use AssertJ assertions (`assertThat(...)`) in all tests. Do NOT use JUnit Jupiter
+  assertions (`assertEquals`, `assertTrue`, `assertFalse`, `assertNotNull`, etc.).
