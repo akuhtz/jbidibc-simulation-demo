@@ -2,6 +2,8 @@
 
 A Maven project demonstrating [jbidibc](https://github.com/bidib/jbidibc) simulation using the `StartMacro` command.
 
+> **Note:** This project requires `2.0-SNAPSHOT` versions of `jbidibc-tools` and `bidibwizard-simulation` (from Sonatype snapshots repository). The fixes needed are not yet released, so snapshot versions are mandatory.
+
 ## Prerequisites
 
 - Java 11+
